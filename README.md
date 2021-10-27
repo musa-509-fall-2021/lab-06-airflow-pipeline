@@ -1,7 +1,5 @@
 # Creating a Pipeline in Airflow
 
-## Creating a Pipeline
-
 For this lab you will need the scripts we've been using for extracting and loading data from the last couple labs. You will need Airflow installed and able to run.
 
 The following video should give a decently cross-platform way of getting set up with Airflow in Docker (i.e., the commands he's running should just be able to be run in PowerShell or the MacOS Terminal): https://www.youtube.com/watch?v=aTaytcxy2Ck. **A couple notes for windows users:**
@@ -40,7 +38,7 @@ You should watch the video above, as it gives good overviews of what each step i
    ```
    Use username `airflow` and password `airflow` to log in.
 
-### Configuring your containers
+## Configuring your containers
 
 Once you have Airflow installed, you'll need to prepare your **_containers_** to run your pipeline code. You can think of a container as a beefed up virtual environment (one like you might create with Conda or Poetry). As such, you'll need to install the packages that are necessary to run your pipeline installed into the containers.
 
@@ -90,12 +88,12 @@ Once you have Airflow installed, you'll need to prepare your **_containers_** to
    ```
 
 
-### The `pipeline_tools` module
+## The `pipeline_tools` module
 
 I've provided a `pipeline_tools` module that has three functions. You should be able to read and understand each line in this module. If there is anything that is unclear, please ask for clarification.
 
 
-### Creating your DAG
+## Creating your DAG
 
 To run the steps of our pipeline, we're going to create a new DAG. All DAGs live in the _dags/_ folder that you created in a previous step. I recommend creating a _**package**_ for each of your DAGs. Remember that a pacakge is just a folder with a file called `__init.py__`.
 
