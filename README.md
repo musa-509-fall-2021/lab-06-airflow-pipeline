@@ -95,7 +95,7 @@ I've provided a `pipeline_tools` module that has three functions. You should be 
 
 ## Creating your DAG
 
-To run the steps of our pipeline, we're going to create a new DAG. All DAGs live in the _dags/_ folder that you created in a previous step. I recommend creating a _**package**_ for each of your DAGs. Remember that a pacakge is just a folder with a file called `__init.py__`.
+To run the steps of our pipeline, we're going to create a new DAG. All DAGs live in the _dags/_ folder that you created in a previous step. I recommend creating a _**package**_ for each of your DAGs. Remember that a pacakge is just a folder with a file called `__init__.py`.
 
 1. Create a folder under _dags/_ named _addresses_pipeline/_. Within that folder, create a file named `__init__.py`.
 
