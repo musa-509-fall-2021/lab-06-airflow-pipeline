@@ -1,3 +1,5 @@
 .env
 *.pyc
 NOTES.md
+logs/*
+!logs/.gitkeep
